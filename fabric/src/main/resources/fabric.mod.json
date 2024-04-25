@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "mc_threading",
+  "version": "${version}",
+
+  "name": "Minecraft threading",
+  "description": "fixes minecraft's performance issues by addding multithreading",
+  "authors": [],
+  "contact": {},
+
+  "license": "GNU GPL 3.0",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.progames723.mc_threading.fabric.MinecraftThreadingFabric"
+    ]
+  },
+  "mixins": [
+    "mc_threading.mixins.json",
+    "mc_threading-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.10",
+    "minecraft": ">=1.20.4"
+  }
+}

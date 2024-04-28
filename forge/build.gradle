@@ -5,6 +5,11 @@ loom {
     forge {
         mixinConfig "mc_threading-common.mixins.json"
         mixinConfig "mc_threading.mixins.json"
+        setAccessWidenerPath(file("src/main/resources/META-INF/mc_threading_forge.accesswidener"))
+        interfaceInjection.setEnableDependencyInterfaceInjection(true)
+        interfaceInjection.setIsEnabled(true)
+        setEnableTransitiveAccessWideners(true)
+        interfaceInjection.setEnableDependencyInterfaceInjection(true)
     }
 }
 architectury {
@@ -22,6 +27,9 @@ configurations {
 
 dependencies {
     forge "net.minecraftforge:forge:${rootProject.forge_version}"
+
+    implementation "io.github.llamalad7:mixinextras-forge:0.3.4"
+    include "io.github.llamalad7:mixinextras-forge:0.3.4"
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
     shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }

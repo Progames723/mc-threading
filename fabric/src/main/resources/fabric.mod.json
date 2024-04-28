@@ -4,8 +4,8 @@
   "version": "${version}",
 
   "name": "Minecraft threading",
-  "description": "fixes minecraft's performance issues by addding multithreading",
-  "authors": [],
+  "description": "fixes minecraft's performance issues by adding multithreading",
+  "authors": ["Progames723"],
   "contact": {},
 
   "license": "GNU GPL 3.0",
@@ -24,5 +24,6 @@
   "depends": {
     "fabricloader": ">=0.15.10",
     "minecraft": ">=1.20.4"
-  }
+  },
+  "accessWidener": "mc_threading_fabric.accesswidener"
 }

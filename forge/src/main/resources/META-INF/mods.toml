@@ -42,7 +42,7 @@ authors="Progames723" #optional
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-fixes minecraft's performance issues by addding multithreading
+fixes minecraft's performance issues by adding multithreading
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.mc_threading]] #optional
